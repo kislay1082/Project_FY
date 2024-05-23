@@ -1,0 +1,78 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/styles/style.css")
+    title TourAdvisor | Tours
+
+  body
+    include ../components/navbar.pug
+
+    h1#location-name(class="text-3xl text-brand font-[700] mx-8 mt-4 underline")= tour.tourName
+
+    header#header(class="flex w-[100%]")
+      //- Map Element
+      div#map-container(class=" rounded-lg w-[45%] h-[100%] p-0 m-8  border-2 border-gray-200")
+        != tour.mapEmbedCode
+
+      if tour.itinerary.length !== 1
+        //- Itinerary Planner
+        section#itinerary-planner(class="overflow-y-scroll no-scrollbar")
+
+          h1(class="text-2xl text-darkest font-[500] my-8 underline block") Itinerary
+
+          //- Starting point div
+          div#journey-start-element(class="flex gap-2 w-fit")
+            div(class="flex flex-col items-center")
+
+              //- map pin
+              div
+                svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                  path(d="M12 2c-4.418 0-8 3.582-8 8 0 6.05 8 13 8 13s8-6.95 8-13c0-4.418-3.582-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z")
+
+              div(class="rotate-90")
+                svg(height="40" width="40")
+                  g(stroke="gray" stroke-width="2")
+                    path(stroke-dasharray="7,7" d="M5 20 l215 0")
+
+            div(class="text-lg text-dark font-[500] -my-1")
+              | Journey Starts, Enjoy Your Trip!
+
+          each stop, index in tour.itinerary
+            div(class="w-fit flex")
+              div(class="flex flex-col")
+                div(class="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center text-base z-10")
+                  | #{index + 1}
+                div(class="mt-4")
+                  svg(height='21' width='60' class="rotate-90")
+                    g(stroke='gray' stroke-width='2')
+                      path(stroke-dasharray='7,7' d='M5 20 l215 0')
+              div(class='text-lg text-dark my-1 font-[500]')
+                | #{stop}
+      else
+        section#itinerary-planner(class="overflow-y-scroll no-scrollbar")
+          h1(class="text-2xl text-darkest font-[500] my-8 underline block") Itinerary
+
+          div(class="text-lg text-dark font-[500]")
+            | No itinerary plan available
+    
+    section
+      h3(class="text-xl text-dark mx-8 font-[700]") About
+
+      p#about-info(class="text-base mx-10 mt-4 w-[85%]")= tour.about
+
+      p(class="text-base mx-10 mt-4 text-dark")
+        | from
+        span#price(class="text-xl text-dark font-[500] mx-2")= tour.price
+        
+      div(class="flex gap-4 mx-10 mt-2 mb-12")
+        p(class="text-sm text-darkest font-[500] underline")
+          | Lowest price guarantee
+        | &#9642;
+        p(class="text-sm text-darkest font-[500] underline")
+          | Reserve now & pay later
+        | &#9642;
+        p(class="text-sm text-darkest font-[500] underline")
+          | Free cancellation
+

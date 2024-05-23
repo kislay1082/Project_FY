@@ -1,0 +1,291 @@
+{
+    "Paris": [
+        {
+            "locationName": "Paris",
+            "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+            "coverImageType":"image/jpeg",
+            "info": {
+                "about": "Paris, the capital of France, is known for its art, fashion, gastronomy, and culture. The city is home to famous landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum.",
+                "image": "/public/Images/booking/atlantis-the-palm.jpg",
+                "imageType": "image/jpeg",
+                "travelAdvice": {
+                    "bestTimeToVisit": [
+                        "Spring (March to May) and Fall (September to November): These seasons offer mild weather and fewer crowds, making it ideal for exploring the city."
+                    ],
+                    "localCustoms": {
+                        "headings": [
+                            "Dining",
+                            "Greetings",
+                            "Etiquette"
+                        ],
+                        "content": [
+                            "Tipping is not mandatory in Paris but appreciated. Leaving a few coins or rounding up the bill is common.",
+                            "A handshake is a common greeting, but friends often greet each other with a kiss on both cheeks.",
+                            "When entering a store or restaurant, it's customary to greet the staff with a 'Bonjour' or 'Bonsoir' depending on the time of day."
+                        ]
+                    }
+                },
+                "tourVideo": "http://example.com/paris-tour.mp4",
+                "tours": [
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Eiffel Tower Skip-the-Line Summit Access Ticket",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Visit the iconic Eiffel Tower and enjoy stunning views of Paris from the summit.",
+                        "price": "€54.00"
+                    },
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Louvre Museum Skip-the-Line Guided Tour",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Explore the world-famous Louvre Museum and see masterpieces like the Mona Lisa and the Venus de Milo.",
+                        "price": "€70.00"
+                    },
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Seine River Cruise with Dinner",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Enjoy a romantic dinner cruise along the Seine River, taking in the illuminated landmarks of Paris.",
+                        "price": "€120.00"
+                    },
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Versailles Palace and Gardens Tour",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Visit the opulent Palace of Versailles and its stunning gardens, a UNESCO World Heritage site.",
+                        "price": "€80.00"
+                    }
+                ]
+            }
+        }
+    ],
+    "Tokyo": [
+        {
+            "locationName": "Tokyo",
+            "coverImage": "<Buffer Data>",
+            "coverImageType": "/public/Images/booking/atlantis-the-palm.jpg",
+            "info": {
+                "about": "Tokyo, the capital of Japan, is a bustling metropolis known for its skyscrapers, shopping, and food scene. It's a city that blends modernity with traditional culture.",
+                "image": "/public/Images/booking/atlantis-the-palm.jpg",
+                "imageType": "image/jpeg",
+                "travelAdvice": {
+                    "bestTimeToVisit": [
+                        "Spring (March to May) and Autumn (September to November): These seasons offer mild temperatures and beautiful natural scenery, such as cherry blossoms and autumn leaves."
+                    ],
+                    "localCustoms": {
+                        "headings": [
+                            "Dining",
+                            "Greetings",
+                            "Etiquette"
+                        ],
+                        "content": [
+                            "It's customary to say 'Itadakimasu' before eating and 'Gochisosama deshita' after finishing a meal.",
+                            "A slight bow is the traditional greeting in Japan.",
+                            "When visiting a home or temple, remove your shoes before entering."
+                        ]
+                    }
+                },
+                "tourVideo": "http://example.com/tokyo-tour.mp4",
+                "tours": [
+                    {
+                        "tourLocation": "Tokyo",
+                        "tourName": "Tokyo Skytree Admission Ticket",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Visit the Tokyo Skytree, the tallest tower in Japan, and enjoy panoramic views of the city.",
+                        "price": "¥2,100"
+                    },
+                    {
+                        "tourLocation": "Tokyo",
+                        "tourName": "Tsukiji Outer Market and Sushi Workshop",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Explore the famous Tsukiji Outer Market and learn how to make sushi from a professional chef.",
+                        "price": "¥12,000"
+                    },
+                    {
+                        "tourLocation": "Tokyo",
+                        "tourName": "Asakusa and Senso-ji Temple Tour",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Visit the historic Asakusa district and the famous Senso-ji Temple.",
+                        "price": "¥6,000"
+                    },
+                    {
+                        "tourLocation": "Tokyo",
+                        "tourName": "Shibuya Crossing and Harajuku Shopping Tour",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Experience the hustle and bustle of Shibuya Crossing and enjoy shopping in Harajuku.",
+                        "price": "¥8,000"
+                    }
+                ]
+            }
+        }
+    ],
+    "New York": [
+        {
+            "locationName": "New York",
+            "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+         "coverImageType": "image/jpeg",
+            "info": {
+                "about": "New York City, the largest city in the United States, is known for its iconic landmarks, diverse culture, and vibrant arts scene. Famous attractions include Times Square, Central Park, and the Statue of Liberty.",
+                "image": "/public/Images/booking/atlantis-the-palm.jpg",
+                "imageType": "image/jpeg",
+                "travelAdvice": {
+                    "bestTimeToVisit": [
+                        "Spring (April to June) and Fall (September to November): These seasons offer pleasant weather and fewer crowds, making it ideal for sightseeing."
+                    ],
+                    "localCustoms": {
+                        "headings": [
+                            "Dining",
+                            "Tipping",
+                            "Public Transit"
+                        ],
+                        "content": [
+                            "New York City is known for its diverse food scene, from street food to fine dining.",
+                            "Tipping is customary in NYC, with 15-20% of the bill being the standard for restaurants.",
+                            "The subway is a convenient way to get around the city. Make sure to stand to the right on escalators to allow others to pass on the left."
+                        ]
+                    }
+                },
+                "tourVideo": "http://example.com/nyc-tour.mp4",
+                "tours": [
+                    {
+                        "tourLocation": "New York",
+                        "tourName": "Statue of Liberty and Ellis Island Tour",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Visit the iconic Statue of Liberty and learn about American history at Ellis Island.",
+                        "price": "$25.00"
+                    },
+                    {
+                        "tourLocation": "New York",
+                        "tourName": "Central Park Horse and Carriage Ride",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Enjoy a romantic horse and carriage ride through Central Park.",
+                        "price": "$100.00"
+                    },
+                    {
+                        "tourLocation": "New York",
+                        "tourName": "Broadway Show Ticket",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Experience the magic of Broadway with tickets to a top show.",
+                        "price": "$150.00"
+                    },
+                    {
+                        "tourLocation": "New York",
+                        "tourName": "Empire State Building Observation Deck Admission",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Enjoy breathtaking views of New York City from the Empire State Building's observation deck.",
+                        "price": "$40.00"
+                    }
+                ]
+            }
+        }
+    ],
+    "London": [
+        {
+            "locationName": "London",
+            "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+            "coverImageType": "image/jpeg",
+            "info": {
+                "about": "London, the capital of England and the United Kingdom, is a vibrant city known for its history, culture, and architecture. Key landmarks include the British Museum, Tower of London, and Buckingham Palace.",
+                "image": "/public/Images/booking/atlantis-the-palm.jpg",
+                "imageType": "image/jpeg",
+                "travelAdvice": {
+                    "bestTimeToVisit": [
+                        "Spring (March to May) and Summer (June to August): These seasons offer warm weather and numerous events and festivals."
+                    ],
+                    "localCustoms": {
+                        "headings": [
+                            "Dining",
+                            "Public Transit",
+                            "Tipping"
+                        ],
+                        "content": [
+                            "British cuisine is diverse, with many international influences. Afternoon tea is a popular tradition.",
+                            "The London Underground (Tube) is a convenient way to travel around the city. Stand on the right on escalators.",
+                            "Tipping is generally 10-15% in restaurants if service is not included in the bill."
+                        ]
+                    }
+                },
+                "tourVideo": "http://example.com/london-tour.mp4",
+                "tours": [
+                    {
+                        "tourLocation": "London",
+                        "tourName": "London Eye Fast-Track Ticket",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Experience stunning views of London from the London Eye, one of the world's largest observation wheels.",
+                        "price": "£30.00"
+                    },
+                    {
+                        "tourLocation": "London",
+                        "tourName": "Tower of London and Crown Jewels Tour",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Explore the historic Tower of London and see the famous Crown Jewels.",
+                        "price": "£25.00"
+                    },
+                    {
+                        "tourLocation": "London",
+                        "tourName": "Thames River Cruise",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Enjoy a scenic cruise along the Thames River, taking in iconic sights like the Houses of Parliament and Tower Bridge.",
+                        "price": "£20.00"
+                    },
+                    {
+                        "tourLocation": "London",
+                        "tourName": "Westminster Abbey and Houses of Parliament Tour",
+                        "coverImage": "/public/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                        "itinerary": [],
+                        "about": "Visit the historic Westminster Abbey and the seat of British democracy, the Houses of Parliament.",
+                        "price": "£45.00"
+                    }
+                ]
+            }
+        }
+    ]
+
+}

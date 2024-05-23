@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title Travel Itinerary
+    link(href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css", rel="stylesheet")
+    style.
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url("/Images/pahad.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+  body
+    nav.navbar(class='bg-[#76bd95] py-4 absolute top-0 left-0 flex justify-between px-12 w-full')
+      a(href="/", class='text-xl text-white cursor-pointer font-bold p-2') TourAdvisor
+      a(href='/logout')
+        button(class='border border-black text-white text-sm px-4 py-2 rounded-lg hover:text-brand hover:bg-darkest grid place-items-center')
+          | Logout
+    div(class="flex justify-center items-center w-full h-full p-4")
+      div(class="w-full max-w-lg p-8 bg-white bg-opacity-25 rounded-lg shadow-lg backdrop-blur-md")
+        h1(class="text-3xl font-bold mb-4 text-white text-center") Travel Itinerary Planner
+        form(action="/aitravelplanner", method="post")
+          div(class="mb-4")
+            label(for="city" class="block text-white") City:
+            input(type="text", name="city", id="city", required class="w-full rounded-md bg-gray-700 text-white p-2 focus:outline-none focus:ring focus:border-blue-300")
+          div(class="mb-4")
+            label(for="country" class="block text-white") Country:
+            input(type="text", name="country", id="country", required class="w-full rounded-md bg-gray-700 text-white p-2 focus:outline-none focus:ring focus:border-blue-300")
+          div(class="mb-4")
+            label(for="arrival" class="block text-white") Arrival Date:
+            input(type="date", name="arrival", id="arrival", required class="w-full rounded-md bg-gray-700 text-white p-2 focus:outline-none focus:ring focus:border-blue-300")
+          div(class="mb-4")
+            label(for="departure" class="block text-white") Departure Date:
+            input(type="date", name="departure", id="departure", required class="w-full rounded-md bg-gray-700 text-white p-2 focus:outline-none focus:ring focus:border-blue-300")
+          div(class="mb-4")
+            label(for="budget" class="block text-white text-bold") Budget (USD):
+            input(type="number", name="budget", id="budget", required class="w-full rounded-md bg-gray-700 text-white p-2 focus:outline-none focus:ring focus:border-blue-300")
+          div(class="mb-4")
+            button(type="submit", class="w-full bg-blue-500 text-white rounded-md p-2 hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300") Generate Itinerary

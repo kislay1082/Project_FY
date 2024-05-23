@@ -1,0 +1,86 @@
+{
+    "Paris": [
+        {
+            "locationName": "Paris",
+            "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+            "coverImageType":"image/jpeg",
+            "info": {
+                "about": "Paris, the capital of France, is known for its art, fashion, gastronomy, and culture. The city is home to famous landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum.",
+                "image": "/Images/booking/atlantis-the-palm.jpg",
+                "imageType": "image/jpeg",
+                "travelAdvice": {
+                    "bestTimeToVisit": [
+                        "Spring (March to May) and Fall (September to November): These seasons offer mild weather and fewer crowds, making it ideal for exploring the city."
+                    ],
+                    "localCustoms": {
+                        "headings": [
+                            "Dining",
+                            "Greetings",
+                            "Etiquette"
+                        ],
+                        "content": [
+                            "Tipping is not mandatory in Paris but appreciated. Leaving a few coins or rounding up the bill is common.",
+                            "A handshake is a common greeting, but friends often greet each other with a kiss on both cheeks.",
+                            "When entering a store or restaurant, it's customary to greet the staff with a 'Bonjour' or 'Bonsoir' depending on the time of day."
+                        ]
+                    }
+                },
+                "tourVideo": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UKAPBE_HkOk?si=CCokTjJ5ihD-lFPL\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+                "tours": [
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Eiffel Tower Skip-the-Line Summit Access Ticket",
+                        "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14440.561161088981!2d55.27629!3d25.198491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sin!4v1715266655718!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+                        "itinerary": [
+                            "Visit the Eiffel Tower and enjoy the view from the top",
+                            "Stroll along the Champs-Élysées",
+                            "Visit the Louvre Museum and see the Mona Lisa",
+                            "Take a boat cruise on the Seine River",
+                            "Explore the historic district of Montmartre"
+                          ],
+                        "about": "Visit the iconic Eiffel Tower and enjoy stunning views of Paris from the summit.",
+                        "price": "€54.00"
+                    },
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Louvre Museum Skip-the-Line Guided Tour",
+                        "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14440.561161088981!2d55.27629!3d25.198491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sin!4v1715266655718!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+                        "itinerary": [
+                            "Visit the Eiffel Tower and enjoy the view from the top",
+                            "Stroll along the Champs-Élysées",
+                            "Visit the Louvre Museum and see the Mona Lisa",
+                            "Take a boat cruise on the Seine River",
+                            "Explore the historic district of Montmartre"
+                          ],
+                        "about": "Explore the world-famous Louvre Museum and see masterpieces like the Mona Lisa and the Venus de Milo.",
+                        "price": "€70.00"
+                    },
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Seine River Cruise with Dinner",
+                        "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14440.561161088981!2d55.27629!3d25.198491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sin!4v1715266655718!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+                        "itinerary": [],
+                        "about": "Enjoy a romantic dinner cruise along the Seine River, taking in the illuminated landmarks of Paris.",
+                        "price": "€120.00"
+                    },
+                    {
+                        "tourLocation": "Paris",
+                        "tourName": "Versailles Palace and Gardens Tour",
+                        "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                        "coverImageType": "image/jpeg",
+                        "mapEmbedCode": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14440.561161088981!2d55.27629!3d25.198491!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sin!4v1715266655718!5m2!1sen!2sin\" width=\"400\" height=\"300\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+                        "itinerary": [],
+                        "about": "Visit the opulent Palace of Versailles and its stunning gardens, a UNESCO World Heritage site.",
+                        "price": "€80.00"
+                    }
+                ]
+            }
+        }
+    ]
+}

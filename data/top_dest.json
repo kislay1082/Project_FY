@@ -1,0 +1,271 @@
+{ 
+    
+    "Dubai":[
+    {
+        "locationName": "Dubai",
+        "coverImage": "/Images/booking/atlantis-the-palm.jpg",  
+        "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+        "info": {
+          "about": "From luxury hospitality and cutting-edge architecture to world-class shopping, culture and nature, discover what makes Dubai the best of the best.",
+          "image": "/Images/booking/atlantis-the-palm.jpg",  
+          "imageType": "/Images/booking/atlantis-the-palm.jpg",
+          "travelAdvice": {
+            "bestTimeToVisit": [
+              "Winter (November to March): Dubai has a hot desert climate with two distinct seasons. The winter months have the most pleasant weather, ideal for outdoor activities. The average daytime high is around 27°C with lows of around 17°C."
+            ],
+            "localCustoms": {
+              "headings": [
+                "Drinking",
+                "Clothing",
+                "Photography"
+              ],
+              "content": [
+                "The legal drinking age for Dubai is 21 years old but buying and consuming alcohol is only legal at licensed bars and clubs at major hotels -- and only for hotel guests and non-Muslim residents with government-issued liquor licenses.",
+                "The UAE is a mostly Muslim country with strict standards of dress and behaviour. Dress modestly and ensure your shoulders and knees are covered.",
+                "It is illegal to photograph people without their consent, airports and other transport infrastructure, government buildings, some beaches, and palaces. Travelers should do their own research and be aware of signs which indicate where photography is prohibited."
+              ]
+            }
+          },
+          "tourVideo": "https://youtu.be/VE75g0frvr4",  
+          "tours": [
+            {
+                "tourLocation": "Dubai",
+                "tourName": "The Burj Khalifa 'At The Top' Observation Deck Admission Ticket",
+                "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "From luxury hospitality and cutting-edge architecture to world-class shopping, culture and nature, discover what makes Dubai the best of the best.",
+                "price": "₹4624.73"
+              },
+              {
+                "tourLocation": "Dubai",
+                "tourName": "Abu Dhabi Private City Tour",
+                "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "From luxury hospitality and cutting-edge architecture to world-class shopping, culture and nature, discover what makes Dubai the best of the best.",
+                "price": "₹17081.19"
+              },
+              {
+                "tourLocation": "Dubai",
+                "tourName": "Dubai Harbour: Super Yacht Experience with Live station & Drinks",
+                "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "From luxury hospitality and cutting-edge architecture to world-class shopping, culture and nature, discover what makes Dubai the best of the best.",
+                "price": "₹8423.59"
+              },
+              {
+                "tourLocation": "Dubai",
+                "tourName": "Atlantis Aquaventure Ticket (with options for Aquarium), Dubai",
+                "coverImage": "/Images/booking/atlantis-the-palm.jpg",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "From luxury hospitality and cutting-edge architecture to world-class shopping, culture and nature, discover what makes Dubai the best of the best.",
+                "price": "₹7330.39"
+              }
+          ]
+        }
+      }
+    ],
+    "Sydney":[
+    {
+      "locationName": "Sydney",
+      "coverImage": "<Buffer>",
+      "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+      "info": {
+        "about": "Sydney offers an urban mix of rich history and contemporary buzz, but with a distinctly Australian spirit...",
+        "image": "<Buffer>",
+        "imageType": "/Images/booking/atlantis-the-palm.jpg",
+        "travelAdvice": {
+          "bestTimeToVisit": ["March to May"],
+          "localCustoms": {
+            "headings": ["Drinking", "Greetings", "Public transit"],
+            "content": [
+              "The legal drinking age in Sydney is 18.",
+              "Handshakes are a customary greeting in Sydney.",
+              "Offer your seat to people who are old, pregnant or have mobility issues."
+            ]
+          }
+        },
+        "tourVideo": "https://youtu.be/VE75g0frvr4",
+        "tours": [ {
+            "tourLocation": "Sydney",
+            "tourName": "All Inclusive Small-Group Blue Mountains Day Trip from Sydney with Scenic World",
+            "coverImage": "<Buffer Data>",
+            "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+            "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+            "itinerary": [],
+            "about": "Sydney offers an urban mix of rich history and contemporary buzz, but with a distinctly Australian spirit...",
+            "price": "₹16,137.29"
+          },
+          {
+            "tourLocation": "Sydney",
+            "tourName": "Journey Beyond Cruise Sydney Harbour - All inclusive Dinner Cruise",
+            "coverImage": "<Buffer Data>",
+            "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+            "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+            "itinerary": [],
+            "about": "Sydney offers an urban mix of rich history and contemporary buzz, but with a distinctly Australian spirit...",
+            "price": "₹11,212.79"
+          },
+          {
+            "tourLocation": "Sydney",
+            "tourName": "Sydney Harbour Tour by Helicopter",
+            "coverImage": "<Buffer Data>",
+            "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+            "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+            "itinerary": [],
+            "about": "Sydney offers an urban mix of rich history and contemporary buzz, but with a distinctly Australian spirit...",
+            "price": "₹13,591.26"
+          },
+          {
+            "tourLocation": "Sydney",
+            "tourName": "Blue Mountains: Three Sisters, Scenic World and Wildlife park",
+            "coverImage": "<Buffer Data>",
+            "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+            "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+            "itinerary": [],
+            "about": "Sydney offers an urban mix of rich history and contemporary buzz, but with a distinctly Australian spirit...",
+            "price": "₹18,404.83"
+          }]
+      }
+    }
+],
+
+"Taipei":[
+    {
+      "locationName": "Taipei",
+      "coverImage": "<Buffer>",
+      "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+      "info": {
+        "about": "The bustling metropolis of Taipei is where you’ll find shiny skyscrapers and ancient temples hazy with incense standing side by side...",
+        "image": "<Buffer>",
+        "imageType": "/Images/booking/atlantis-the-palm.jpg",
+        "travelAdvice": {
+          "bestTimeToVisit": ["Fall (September to November)"],
+          "localCustoms": {
+            "headings": ["Dining", "Pleasantries"],
+            "content": [
+              "Never stand your chopsticks up in your rice bowl...",
+              "Thank you in Chinese sounds like zjay zjay (Xie xie). For more information about local customs and etiquette in Taiwan, see here."
+            ]
+          }
+        },
+        "tourVideo": "https://youtu.be/VE75g0frvr4",
+        "tours": [
+           
+              {
+                "tourLocation": "Taipei",
+                "tourName": "Private Taroko Gorge National Park Day Tour",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The bustling metropolis of Taipei is where you’ll find shiny skyscrapers and ancient temples hazy with incense standing side by side...",
+                "price": "₹12,805.63"
+              },
+              {
+                "tourLocation": "Taipei",
+                "tourName": "The Award-Winning PRIVATE Food Tour of Taipei: The 10 Tastings",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The bustling metropolis of Taipei is where you’ll find shiny skyscrapers and ancient temples hazy with incense standing side by side...",
+                "price": "₹6,692.59"
+              },
+              {
+                "tourLocation": "Taipei",
+                "tourName": "4-Hour Morning Cycling Tour in Taipei",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The bustling metropolis of Taipei is where you’ll find shiny skyscrapers and ancient temples hazy with incense standing side by side...",
+                "price": "₹5,543.98"
+              },
+              {
+                "tourLocation": "Taipei",
+                "tourName": "Full-Day Private Custom Taipei City Tour",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The bustling metropolis of Taipei is where you’ll find shiny skyscrapers and ancient temples hazy with incense standing side by side...",
+                "price": "₹9,390.79"
+              }
+        ]
+      }
+    }
+],
+"Airlie Beach":[ 
+    {
+      "locationName": "Airlie Beach",
+      "coverImage": "<Buffer>",
+      "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+      "info": {
+        "about": "The gateway to the Great Barrier Reef, Airlie Beach is the main hub for all Reef activities and access to the Whitsunday Islands...",
+        "image": "<Buffer>",
+        "imageType": "/Images/booking/atlantis-the-palm.jpg",
+        "travelAdvice": {
+          "bestTimeToVisit": ["Spring"],
+          "localCustoms": {
+            "headings": ["No specific customs"],
+            "content": []
+          }
+        },
+        "tourVideo": "Airlie Beach, Australia",
+        "tours": [
+            {
+                "tourLocation": "Airlie Beach",
+                "tourName": "Whitsundays Guided Jet Ski Tour",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The gateway to the Great Barrier Reef, Airlie Beach is the main hub for all Reef activities and access to the Whitsunday Islands...",
+                "price": "₹7,078.78"
+              },
+              {
+                "tourLocation": "Airlie Beach",
+                "tourName": "Whitsunday Islands and Heart Reef Scenic Flight - 70 minutes",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The gateway to the Great Barrier Reef, Airlie Beach is the main hub for all Reef activities and access to the Whitsunday Islands...",
+                "price": "₹15,799.84"
+              },
+              {
+                "tourLocation": "Airlie Beach",
+                "tourName": "2-Night Whitsundays Sailing Cruise incl. Whitehaven Beach & Great Barrier Reef",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The gateway to the Great Barrier Reef, Airlie Beach is the main hub for all Reef activities and access to the Whitsunday Islands...",
+                "price": "₹28,258.50"
+              },
+              {
+                "tourLocation": "Airlie Beach",
+                "tourName": "Ocean Rafting Tour to Whitehaven Beach, Hill Inlet Lookout & Top Snorkel Spots",
+                "coverImage": "<Buffer Data>",
+                "coverImageType": "/Images/booking/atlantis-the-palm.jpg",
+                "mapEmbedCode": "https://www.google.com/maps?ll=25.198491,55.27629&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=18394360053605775330",
+                "itinerary": [],
+                "about": "The gateway to the Great Barrier Reef, Airlie Beach is the main hub for all Reef activities and access to the Whitsunday Islands...",
+                "price": "₹10,816.38"
+              }
+           
+        ]
+      }
+    }
+]
+   
+      
+}

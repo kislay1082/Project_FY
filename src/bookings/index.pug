@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/styles/style.css')
+  title TourAdvisor | Bookings
+
+body
+  // Navigation bar
+  nav#navbar(class="h-14 bg-light text-lightest p-2 sticky top-0 left-0")
+    div(class="container mx-auto flex items-center justify-between")
+      // Brand/Logo
+      div(class="flex items-center")
+        span(class='font-[800] text-xl text-brand cursor-pointer') TourAdvisor
+        // Search Bar
+        form(action='/location' , method="GET", class="flex items-center mx-auto rounded-lg") 
+          //- input(type='text' placeholder='Where To?' class="ml-4 px-2 py-1 border rounded-full outline-none text-darkest")
+          input(type='text' placeholder='Where To?', autocomplete="off", name='locationName' ,class=" ml-4 px-2 py-1 w-full rounded-l-full text-mid focus:outline-none placeholder:text-mid")
+          button(type="submit", class="px-2 py-1 rounded-r-full bg-white") &#x1F50E;
+      // Navbar Links
+      div(class="space-x-4")
+        a(href='/' class='font-[500] hover:bg-mid nav-link text-dark text-base rounded-lg p-2') Home
+        a(href='/tours', class='font-[500] hover:bg-mid nav-link text-dark text-base rounded-lg p-2')
+          | Tours
+      // Sign In Button
+      button#signInBtn(class='hover:text-brand hover:bg-darkest bg-brand text-darkest py-2 px-4 rounded-lg')
+        | Sign In
+
+  // Sub navigation bar
+  #subnavbar(class='bg-lightest sticky top-14 left-0 h-12 flex items-center')
+    div(class="container mx-auto flex items-center")
+      // Subnavbar Buttons
+      a(href="/bookings", class=`focus:outline-none focus:border-b-4 focus:border-darkest subnav-btn p-3 text-base`)
+        | Hotels
+      a(href="/bookings/flights", class='focus:outline-none focus:border-b-4 focus:border-darkest subnav-btn p-3 text-base')
+        | Flights
+  // Sidebar
+  #sidebar(class='w-[15vw] bg-gray-100 h-screen p-4 fixed top-[6.5rem] left-0')
+    h2(class="text-4xl font-bold mt-10") 
+      span(class="text-brand") Find 
+      | Hotels, Holiday Homes, Flights, Spas & Much More..✈️ 

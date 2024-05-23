@@ -1,0 +1,189 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/styles/style.css")
+    title TourAdvisor 
+
+  body(class="no-scrollbar")
+    //- Navigation Bar
+    include ../components/navbar.pug
+    +navbar({ path: '/location', name: 'locationName' })
+
+    //- Sub-navigation bar
+    div(class="border-b-[1px] border-mid bg-lightest sticky top-14 left-0")
+      div(class="container mx-auto flex items-center gap-4")
+        button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Things to do
+        button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Travel Advice
+        button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Tour video
+
+    //- Search Results
+    if locations.length
+      each location in locations
+        header(class="p-8")
+          div(class="flex justify-between gap-8")
+            img(src=`data:image/jpeg;base64,${location.coverImage.toString('base64')}` , alt="", class="w-[60%] aspect-video")
+            div(class="w-[40%]")
+              h2(class="text-4xl text-dark font-[700] underline") About 
+              p(class="text-lg mt-8")= location.info.about
+      
+        section#things-to-do(class="flex flex-col mt-8 ml-10 p-4 gap-8")
+          div 
+            h2(class="text-3xl text-dark font-[700] underline") Must Do 
+          div(class="flex gap-8")
+            each tour in location.info.tours
+              div(class="flex flex-col items-center rounded-lg overflow-hidden max-w-xs shadow-md")
+                img(src=`data:image/jpeg;base64,${tour.coverImage.toString('base64')}` ,alt='Image description', class="w-full h-[65%] object-cover")
+                div(class="p-3 flex flex-col gap-1")
+                  a(href=`/tours/${tour.id}`, class="text-lg font-[500] text-clip overflow-hidden hover:text-brand")
+                    | #{tour.tourName}
+                  p(class="text-mid text-lg")
+                    | #{tour.price}
+      
+        section#travel-advice(class="flex flex-col ml-10 p-4 gap-8")
+          div(class="")
+            h2(class="text-3xl font-[700] text-dark underline") Travel Advice
+          div#best-time-to-visit(class="")
+            h3(class="text-xl text-darkest font-[500] bg-light py-1 px-2 rounded-md") Best time to visit
+            p(class="mt-4")= location.info.travelAdvice.bestTimeToVisit
+          div#local-customs
+            h3(class="text-xl text-darkest font-[500] bg-light py-1 px-2 rounded-md my-6") Local customs
+            each heading, index in location.info.travelAdvice.localCustoms.headings
+              div
+                h3(class="text-lg font-[500] underline text-dark")= heading
+                p(class="text-base my-4 italic")= location.info.travelAdvice.localCustoms.content[index]
+
+        section#video-section(class="flex flex-col ml-10 p-4")
+          h2(class="text-3xl font-[700] text-dark underline") Tour Video - #{location.locationName}
+          div(class="w-[60%] mx-auto my-10 aspect-video")
+            != location.info.tourVideo
+    else
+      p No results found for "#{searchQuery}"
+
+
+
+
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport" content="width=device-width, initial-scale=1.0")
+//-     link(rel="stylesheet" href="/styles/style.css")
+//-     title TourAdvisor 
+//-   body(class="no-scrollbar") 
+//-     //- Navigation Bar
+//-     include ../components/navbar.pug
+//-     +navbar({ path: '/location', name: 'locationName'})
+
+//-     //- Sub-navigation bar
+//-     div(class="border-b-[1px] border-mid bg-lightest sticky top-14 left-0")
+//-       div(class="container mx-auto flex items-center gap-4")
+//-         button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Things to do
+//-         button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Travel Advice
+//-         button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Tour video
+
+//-     //- Search Results
+//-     if locations.length
+//-       each location in locations
+//-         header(class="p-8")
+//-           div(class="flex justify-between gap-8")
+//-             img(src=location.imagePath , alt="", class="w-[60%] aspect-video")
+//-             div(class="w-[40%]")
+//-               h2(class="text-4xl text-dark font-[700] underline") About 
+//-               p(class="text-lg mt-8")= location.info.about
+      
+//-         section#things-to-do(class="flex flex-col mt-8 ml-10 p-4 gap-8")
+//-           div 
+//-             h2(class="text-3xl text-dark font-[700] underline") Must Do 
+//-           div(class="flex gap-8")
+//-             each tour in location.info.tours
+//-               div(class="flex flex-col items-center rounded-lg overflow-hidden max-w-xs shadow-md")
+//-                 img(src=tour.coverImagePath ,alt='Image description', class="w-full h-[65%] object-cover")
+//-                 div(class="p-3 flex flex-col gap-1")
+//-                   a(href=`/tours/${tour.id}`, class="text-lg font-[500] text-clip overflow-hidden hover:text-brand")
+//-                     | #{tour.tourName}
+//-                   p(class="text-mid text-lg")
+//-                     | #{tour.price}
+      
+//-         section#travel-advice(class="flex flex-col ml-10 p-4 gap-8")
+//-           div(class="")
+//-             h2(class="text-3xl font-[700] text-dark underline") Travel Advice
+//-           div#best-time-to-visit(class="")
+//-             h3(class="text-xl text-darkest font-[500] bg-light py-1 px-2 rounded-md") Best time to visit
+//-             p(class="mt-4")= location.info.travelAdvice.bestTimeToVisit
+//-           div#local-customs
+//-             h3(class="text-xl text-darkest font-[500] bg-light py-1 px-2 rounded-md my-6") Local customs
+//-             each heading, index in location.info.travelAdvice.localCustoms.headings
+//-               div
+//-                 h3(class="text-lg font-[500] underline text-dark")= heading
+//-                 p(class="text-base my-4 italic")= location.info.travelAdvice.localCustoms.content[index]
+
+//-         section#video-section(class="flex flex-col ml-10 p-4")
+//-           h2(class="text-3xl font-[700] text-dark underline") Tour Video - #{location.locationName}
+//-           div(class="w-[60%] mx-auto my-10 aspect-video")
+//-             != location.info.tourVideo
+//-     else
+//-       p No results found for "#{locationName}"
+
+
+
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-     link(rel="stylesheet" href="/styles/style.css")
+//-     title TourAdvisor 
+//-   body(class="no-scrollbar") 
+//-     //- Navigation Bar
+//-     include ../components/navbar.pug
+//-     +navbar({ path: '/location', name: 'locationName'})
+
+//-     //- Sub-navigation bar
+//-     div(class="border-b-[1px] border-mid bg-lightest sticky top-14 left-0")
+//-       div(class="container mx-auto flex items-center gap-4")
+//-         button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Things to do
+//-         button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Travel Advice
+//-         button(class="subnav-btn p-2 text-sm focus:outline-none focus:border-b-2 focus:border-darkest") Tour video
+
+//-     //- Header
+//-     - const info = location.info
+//-     - const tours = info.tours
+//-     header(class="p-8")
+//-       div(class="flex justify-between gap-8")
+//-         img(src=location.imagePath, alt="", class="w-[60%] aspect-video")
+//-         div(class="w-[40%]")
+//-           h2(class="text-4xl text-dark font-[700] underline") About 
+//-           p(class="text-lg mt-8")= info.about
+    
+//-     section#things-to-do(class="flex flex-col mt-8 ml-10 p-4 gap-8")
+//-       div 
+//-         h2(class="text-3xl text-dark font-[700] underline") Must Do 
+//-       div(class="flex gap-8")
+//-         each tour in tours
+//-           div(class="flex flex-col items-center rounded-lg overflow-hidden max-w-xs shadow-md")
+//-             img(src=tour.coverImagePath, alt='Image description', class="w-full h-[65%] object-cover")
+//-             div(class="p-3 flex flex-col gap-1")
+//-               a(href=`/tours/${tour.id}`, class="text-lg font-[500] text-clip overflow-hidden hover:text-brand")
+//-                 | #{tour.tourName}
+//-               p(class="text-mid text-lg")
+//-                 | #{tour.price}
+
+//-     section#travel-advice(class="flex flex-col ml-10 p-4 gap-8")
+//-       div(class="")
+//-         h2(class="text-3xl font-[700] text-dark underline") Travel Advice
+//-       div#best-time-to-visit(class="")
+//-         h3(class="text-xl text-darkest font-[500] bg-light py-1 px-2 rounded-md") Best time to visit
+//-         p(class="mt-4")= info.travelAdvice.bestTimeToVisit
+//-       div#local-customs
+//-         h3(class="text-xl text-darkest font-[500] bg-light py-1 px-2 rounded-md my-6") Local customs
+//-         each heading, index in info.travelAdvice.localCustoms.headings
+//-           div
+//-             h3(class="text-lg font-[500] underline text-dark")= heading
+//-             p(class="text-base my-4 italic")= info.travelAdvice.localCustoms.content[index]
+
+//-     section#video-section(class="flex flex-col ml-10 p-4")
+//-       h2(class="text-3xl font-[700] text-dark underline") Tour Video - #{location.locationName}
+//-       div(class="w-[60%] mx-auto my-10 aspect-video")
+//-         != info.tourVideo

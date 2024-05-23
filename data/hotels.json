@@ -1,0 +1,104 @@
+{
+    "Dubai": [
+        {
+            "img": "/Images/booking/atlantis-the-palm.jpg",
+            "name": "Atlantis the Palm",
+            "prices": {
+                "bestPrice": {
+                    "source": "Booking.com",
+                    "before": "1,52,330",
+                    "after": "96,770"
+                },
+                "otherPrices": [
+                    {
+                        "source": "Trivago",
+                        "price": "98,800"
+                    },
+                    {
+                        "source": "Agoda.com",
+                        "price": "97,650"
+                    },
+                    {
+                        "source": "Expedia",
+                        "price": "1,10,250"
+                    }
+                ]
+            }
+        },
+        {
+            "img": "/Images/booking/the-ritz-carlton-dubai.jpg",
+            "name": "The Ritz-Carlton, Dubai",
+            "prices": {
+                "bestPrice": {
+                    "source": "Booking.com",
+                    "before": "1,18,903",
+                    "after": "1,12,127"
+                },
+                "otherPrices": [
+                    {
+                        "source": "RitzCarlton.com",
+                        "price": "1,12,078"
+                    },
+                    {
+                        "source": "Trip.com",
+                        "price": "1,18,903"
+                    },
+                    {
+                        "source": "Agoda.com",
+                        "price": "1,13,677"
+                    }
+                ]
+            }
+        },
+        {
+            "img": "/Images/booking/rixos-palm.jpg",
+            "name": "Rixos Hotel & Suites",
+            "prices": {
+                "bestPrice": {
+                    "source": "Expedia",
+                    "before": "2,56,416",
+                    "after": "1,19,562"
+                },
+                "otherPrices": [
+                    {
+                        "source": "Trip.com",
+                        "price": "1,32,550"
+                    },
+                    {
+                        "source": "Hotels.com",
+                        "price": "2,56,416"
+                    },
+                    {
+                        "source": "Rixos Hotels",
+                        "price": "2,13,949"
+                    }
+                ]
+            }
+        },
+        {
+            "img": "/Images/booking/hilton-jumeirah.jpg",
+            "name": "Hilton Jumeirah Resort",
+            "prices": {
+                "bestPrice": {
+                    "source": "Booking.com",
+                    "before": "47,229",
+                    "after": "46,560"
+                },
+                "otherPrices": [
+                    {
+                        "source": "Expedia",
+                        "price": "46,776"
+                    },
+                    {
+                        "source": "Agoda.com",
+                        "price": "46,777"
+                    },
+                    {
+                        "source": "MakeMyTrip",
+                        "price": "48,779"
+                    }
+                ]
+            }
+        }
+    ]
+}

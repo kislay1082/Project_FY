@@ -1,0 +1,514 @@
+html,
+body {
+	width: 100%;
+	background-color: #f5fbff;
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	background: linear-gradient(-90deg, #1d3557, #98c1d9);
+	opacity: 85%;
+	/* added sticky nav bar */
+	position: sticky;
+	top: 0;
+}
+
+.popular,
+.headers {
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+	text-shadow: 1px 1px 2px #98c1d9;
+}
+
+::placeholder {
+	color: #5d697c;
+}
+
+.pure-input-rounded-search-text {
+	border-color: #3e6eb6;
+}
+
+.btn {
+	background-color: #374358;
+}
+
+.btn:hover {
+	background-color: #98c1d9;
+}
+
+.date-calendar-container {
+	background-color: #3e6eb6;
+}
+
+input {
+	color: #374358;
+}
+
+.datepicker-date-display {
+	background: linear-gradient(-90deg, #98c1d9, #293241);
+}
+.nav-icon {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #eef1fc;
+}
+.nav-text {
+	display: flex;
+	align-items: center;
+}
+
+.custom-brand {
+	font-size: x-large;
+	color: #eef1fc;
+}
+
+#temp {
+	padding: 25px 0px;
+	font-size: xx-large;
+	font-style: bolder;
+	text-shadow: 2px 3px 1px #b2d8ee;
+	display: flex;
+	justify-content: center;
+}
+
+a:hover {
+	color: #374358;
+}
+
+#home-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 90px;
+}
+
+.custom-btn {
+	margin-top: 35px;
+}
+
+.fixed-width-btn {
+	width: 150px;
+}
+
+.center {
+	text-align: center;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+}
+
+#map-info {
+	width: 50%;
+}
+
+.custom-cards {
+	box-shadow: 10px 10px 10px 10px #374358;
+	border-radius: 20px;
+	opacity: 40px;
+	background: transparent;
+}
+
+.input-field > label,
+.card-title {
+	color: #374358;
+}
+
+.search-form {
+	display: flex;
+	width: 350px;
+	align-self: center;
+	margin-bottom: 50px;
+}
+
+#current-city-data {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.search-text {
+	text-align: center;
+}
+
+.search-button {
+	color: #374358;
+	background-color: transparent;
+}
+
+.images {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.popular-images {
+	width: 240px;
+	height: 200px;
+	border-radius: 8px;
+}
+
+.wrap-img {
+	position: relative;
+	margin-top: 10px;
+}
+
+#icon {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 3;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	color: #eef1fc;
+	font-size: 20px;
+	padding: 17px;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.wrap-img:hover .overlay {
+	opacity: 1;
+}
+
+.effect.hover-shadow {
+	transition: 0.3s;
+}
+
+.effect:hover {
+	opacity: 80%;
+	width: 300px;
+	height: 250px;
+}
+.hover-shadow:hover {
+	box-shadow: 0 17px 18px 0 rgba(0, 0, 0, 0.2), 0 9px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cursor {
+	cursor: pointer;
+}
+
+h4,
+h5,
+.overlay,
+.center-text,
+.search-text,
+footer,
+#current-city-data,
+.card-title,
+#select-city,
+.btn,
+#current-city,
+#humidity,
+#uv-index,
+#restaurants-list,
+#todo-list,
+#shopping-list {
+	font-family: "Roboto", sans-serif;
+}
+
+h4,
+h5,
+#current-city-data,
+#select-city,
+#current-city,
+#humidity,
+#uv-index,
+#restaurants-list,
+#todo-list,
+#shopping-list {
+	color: #374358;
+}
+
+.humidity_style,
+.uv_style {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#restaurants-list,
+#todo-list,
+#shopping-list {
+	font-size: 25;
+}
+
+footer {
+	margin-top: 30px;
+	padding: 25px;
+	text-align: center;
+	color: #1d3557;
+}
+
+.footer-border {
+	background-color: #1d3557;
+	height: 2px;
+	width: 70%;
+	font-weight: bold;
+}
+
+.carousel {
+	height: 500px !important;
+}
+
+.carousel-item {
+	width: 400px !important;
+	height: 400px !important;
+}
+
+/* added class section-hide with (display: none) to be use in the sections in order to hide them when is needed*/
+.section-hide {
+	display: none !important;
+}
+
+.card-content {
+	line-height: 30px;
+}
+
+.placeColor::-webkit-input-placeholder {
+	color: #3f4d64;
+}
+
+#myNotes::placeholder {
+	color: #5d697c;
+}
+
+.img_msg {
+	color: #5d697c;
+	text-align: center;
+	font-weight: normal;
+	font-size: medium;
+}
+
+.plan-vacation-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+#plan-vacation-page {
+	display: flex;
+	flex-direction: column;
+}
+#plan-vacation-btn {
+	margin-top: 40px;
+}
+.plan-vacation-card {
+	min-height: 285px;
+}
+
+.card-title {
+	font-weight: bolder !important;
+}
+
+.button-container {
+	display: flex;
+}
+
+#save-trip {
+	margin: auto;
+}
+
+textarea {
+	resize: none;
+	min-height: 140px;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #5d697c;
+}
+
+#save-activity {
+	margin: 1px 1px;
+}
+
+#activity-form {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid;
+	height: 42px;
+}
+
+#activity-input {
+	border: none;
+}
+
+#activity-input:focus {
+	outline: none;
+	border: none;
+}
+
+li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.guest-style {
+	display: flex;
+	flex-direction: column;
+}
+
+#myNotes {
+	margin-bottom: 20px;
+}
+
+#travel-plans-page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.padding-0 {
+	padding: 0px !important;
+}
+
+.padding-20 {
+	padding: 0px 20px !important;
+}
+
+.card .card-image img {
+	height: 250px;
+}
+
+/* navbar */
+.custom-wrapper {
+	background: linear-gradient(-90deg, #1d3557, #98c1d9);
+	opacity: 85%;
+	margin-bottom: 1em;
+	-webkit-font-smoothing: antialiased;
+	height: 4.1em;
+	overflow: hidden;
+	-webkit-transition: height 0.5s;
+	-moz-transition: height 0.5s;
+	-ms-transition: height 0.5s;
+	transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+	height: 10em;
+}
+
+.custom-menu-3 {
+	text-align: right;
+}
+
+.custom-toggle {
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+}
+
+.custom-toggle .bar {
+	background-color: #777;
+	display: block;
+	width: 20px;
+	height: 2px;
+	border-radius: 100px;
+	position: absolute;
+	top: 18px;
+	right: 7px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.flex-class {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.marker {
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	color: red;
+}
+
+@media (max-width: 47.999em) {
+	.custom-menu-3 {
+		text-align: left;
+	}
+
+	.custom-toggle {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.search-form {
+		flex-direction: column;
+	}
+	.search-button {
+		margin-top: 12px;
+	}
+	.search-text {
+		width: 80%;
+	}
+	.humidity_style,
+	.uv_style {
+		align-self: center;
+	}
+	.custom-cards {
+		box-shadow: 2px 2px 2px 2px #374358;
+	}
+	.card .card-image img {
+		height: 100%;
+	}
+	/* avoid blinking effect on small devices */
+	.effect:hover {
+		width: 240px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.images {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.overlay {
+		width: 50%;
+		text-align: center;
+	}
+}

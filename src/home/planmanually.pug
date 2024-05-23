@@ -1,0 +1,230 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    //- link google fonts
+    link(href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet")
+    //- link API map required links
+    link(rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css" type="text/css")
+    link(href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet')
+    //- link Mui CSS
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" rel="stylesheet" type="text/css")
+    //- link Mui CSS icons
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    //- pure grid
+    link(rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css")
+    //- link Pure CSS
+    link(rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous")
+    //- font for the page
+    link(href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet")
+    //- link font fontawesome
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+    //- link custom CSS
+    link(rel="stylesheet" href="/styles/planmanually.css")
+    title TourAdvisor
+  body
+    //- nav section
+    nav.pure-menu.pure-menu-horizontal
+      a#home-btn.pure-menu-heading.pure-menu-link.nav-icon(href="/")
+        i.fas.fa-home
+      a#back-btn.pure-menu-heading.pure-menu-link.nav-icon(href="")
+        i.fa.fa-backward
+      a#go-plans.pure-menu-heading.pure-menu-link.nav-icon(href="#")
+        i.fas.fa-plane
+
+    //- home page section
+    section#home-page.page-section
+      //- search form
+      form.pure-form.search-form
+        input.pure-input-rounded.search-text#searchId(type="text" placeholder="Where would you like to go ?")
+        //- search button
+        button.pure-button.search-button(type="submit")
+          i.fas.fa-search-location.fa-lg
+      //- popular places images section
+      h5.popular.shadow Popular places to travel
+      section.images
+        .wrap-img
+          img.hover-shadow.cursor.popular-images.effect.top-destinations(src="/Images/home-page-imgs/paris.jpg" data-name="Paris")
+          .overlay Paris
+        .wrap-img
+          img.hover-shadow.cursor.popular-images.effect.top-destinations(src="/Images/home-page-imgs/vegas.jpg" data-name="Las Vegas")
+          .overlay Las Vegas
+        .wrap-img
+          img.hover-shadow.cursor.popular-images.effect.top-destinations(src="/Images/home-page-imgs/rome.jpg" data-name="Roma")
+          .overlay Rome
+        .wrap-img
+          img.hover-shadow.cursor.popular-images.effect.top-destinations(src="/Images/home-page-imgs/sanfrancisco.jpg" data-name="San Francisco")
+          .overlay San Francisco
+        .wrap-img.hide-on-4
+          img.hover-shadow.cursor.popular-images.effect.top-destinations(src="/Images/home-page-imgs/london.jpg" data-name="London")
+          .overlay London
+        .wrap-img.hide-on-4
+          img.hover-shadow.cursor.popular-images.effect.top-destinations(src="/Images/home-page-imgs/miami.jpg" data-name="Miami")
+          .overlay Miami
+
+    //- new city details layout
+    section#city-details-page.section-hide.page-section
+      h1#current-city-data.headers
+      //- Images
+      .row
+        .carousel
+          //- getting the images random on js
+      //- Map
+      .row
+        #map.col.s12.padding-0
+      //- info in general
+      .row#city-todo
+        .col.s12.m4.padding-20
+          .card.custom-cards.display-fix
+            .card-content.dark-text
+              span.card-title Restaurants
+              #restaurants-list
+        .col.s12.m4.padding-20
+          .card.custom-cards.display-fix
+            .card-content.dark-text
+              span.card-title Shopping
+              #shopping-list
+        .col.s12.m4.padding-20
+          .card.custom-cards.display-fix
+            .card-content.dark-text
+              span.card-title Todo
+              #todo-list
+      //- weather
+      #weather-container.row
+        .col.s12.padding-20#weather-card
+          .card.custom-cards
+            .card-content.weather-content
+              .card-title.center
+                #icon
+                h3
+                  span#current-city
+                h5
+                  span#current-date
+              #temp
+              .humidity_style Humidity:
+                span#humidity
+              .uv_style UV Index:
+                span#uv-index
+      //- plan vacation button
+      .pure-g
+        .pure-u-1-3
+        .pure-u-1-3.center
+          button.waves-effect.waves-light.btn.fixed-width-btn#plan-vacation-btn Plan Vacation
+          br
+          br
+          button.waves-effect.waves-light.btn.fixed-width-btn#go-home-from-city-btn Back Home
+
+    //- plan vacation section
+    section#plan-vacation-page.section-hide.page-section
+      .plan-vacation-container
+        div
+          h4 Plan Vacation
+        div
+          h5#select-city
+            //- populate info
+      .date-picker-container.row
+        .col.s12.m6
+          label(for="from_date") From
+          input#from_date.datepicker(type="text" name="from_date")
+        .col.s12.m6
+          label(for="to_date") to
+          input#to_date.datepicker(type="text" name="to_date")
+      .row
+        //- notes info
+        .col.s12.m12.l3
+          .card.custom-cards.plan-vacation-card.lighten-4
+            .card-content.dark-text.guest-style
+              span.card-title Trip Notes
+              textarea#myNotes(form="vacation-notes" name="vacation-notes" maxlength="300" placeholder="Vacation notes" rows="30" cols="30")
+        //- guest list
+        .col.s12.m12.l6
+          .card.custom-cards.plan-vacation-card.lighten-4
+            .card-content.dark-text.guest-style
+              span.card-title Guests
+              //- guest info
+              .row
+                form.col.s12.guest-form
+                  .row
+                    .input-field.col.s6
+                      i.material-icons.prefix account_circle
+                      input#icon_prefix(type="text" class="validate" placeholder="Name")
+                      label(for="icon_prefix") First Name
+                    .input-field.col.s6
+                      i.material-icons.prefix phone
+                      input#icon_telephone(type="tel" class="validate" placeholder="###-###-####")
+                      label(for="icon_telephone") Telephone
+                  #guest-list
+                  button.waves-effect.waves-light.btn#add-guest(type="submit" form="guest-form") Add Guest
+        //- activities list
+        .col.s12.m12.l3
+          .card.custom-cards.plan-vacation-card.lighten-4
+            .card-content.dark-text.guest-style
+              span.card-title Activities
+              //- place info here
+              form#activity-form
+                input#activity-input(type="text" form="activity-input" placeholder="Add activity")
+                button.waves-effect.waves-light.btn#add-activity(type="submit" form="activity-form") Add
+              ul#activity-list
+      .pure-g
+        .pure-u-1-3
+        .pure-u-1-3.center
+          button.waves-effect.waves-light.btn.custom-btn.fixed-width-btn#save-trip Save Trip
+          br
+          br
+          button.waves-effect.waves-light.btn.fixed-width-btn#go-home-from-plan-btn Back Home
+
+    //- travel plans section
+    //- Active Vacation plans
+    section#travel-plans-page.section-hide.page-section
+      section.container
+        //- Active Vacation plans
+        h5.padding-20 Active Travel Plans
+        #active-travel-plans-list.row
+      br
+      hr
+      br
+      section.container
+        //- Upcoming Vacation plans
+        h5.padding-20 Upcoming Travel Plans
+        #upcoming-travel-plans-list.row
+      br
+      hr
+      br
+      section.container
+        //- Past Vacation plans
+        h5.padding-20 Past Travel Plans
+        #past-travel-plans-list.row
+      br
+      hr
+      br
+
+    //- page footer
+    footer
+      hr.footer-border
+      span TourAdvisor
+      span &copy;
+      span 2024
+
+    //- Modal Structure
+    #main-modal.modal
+      #main-modal-content.modal-content
+    .modal-footer
+      a.modal-close.waves-effect.waves-green.btn-flat(href="#!") OK
+
+    //- jquery cdn
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    //- jquery UI cdn
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+    //- API Map js file
+    script(src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js")
+    script(src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js')
+    //- compiled and minified javascript MUI
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+    //- moments cdn
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js")
+    //- custom scripts
+    script(src="/scripts/core.js")
+    script(src="/scripts/city.js")
+    script(src="/scripts/vacation.js")
+    script(src="/scripts/scripty.js")

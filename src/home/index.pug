@@ -1,0 +1,169 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='/styles/style.css')
+  title TourAdvisor
+
+body(class="font-rubik px-16 bg-lightest no-scrollbar")
+  // Background cover image
+  //- div(class='h-[85vh] absolute top-0 left-0 w-full bg-cover bg-center bg-no-repeat' style="background-image: url('/Images/home-page-cover.jpg')")
+  div(class="h-[90vh] absolute top-0 left-0 w-full bg-cover bg-center bg-no-repeat", style=("background-image: url('Images/hero-image.jpg')"))
+
+  // Glass morphism element
+  div(class='backdrop-blur-[10px] shadow-[0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%)] box-border w-full mix-blend-difference fixed top-0 left-0 h-16 z-10' style='\
+  background-image: linear-gradient(\
+  45deg,\
+  rgba(66, 60, 90, 1),\
+  rgba(66, 60, 90, 1)\
+  );\
+  ')
+
+  // Navigation bar
+  nav(class="flex items-center justify-between p-3 sticky top-0 z-10")
+    a(href="/", class='text-2xl text-brand cursor-pointer font-[800]') TourAdvisor
+    div
+      ul(class="flex gap-3")
+        li
+          a#discover(href='#discover' class='text-lightest text-base rounded-lg p-2 font-[500] hover:bg-dark') Discover
+        li
+          a(href='/tours' class='text-lightest text-base rounded-lg p-2 font-[500] hover:bg-dark') Tours
+        li
+          a(href='/bookings' class='text-lightest text-base rounded-lg p-2 font-[500] hover:bg-dark') Bookings
+    div(class="flex gap-4")
+          if user
+            a(href='/dashboard')
+              button(class='bg-brand text-sm px-4 py-2 rounded-lg hover:text-brand hover:bg-darkest grid place-items-center')
+                | Dashboard
+            a(href='/logout')
+              button(class='bg-brand text-sm px-4 py-2 rounded-lg hover:text-brand hover:bg-darkest grid place-items-center')
+                | Logout
+          else
+            a(href='/login')
+              button(class='bg-brand text-sm px-4 py-2 rounded-lg hover:text-brand hover:bg-darkest grid place-items-center')
+                | Log In
+            a(href='/register')
+              button(class='bg-brand text-sm px-4 py-2 rounded-lg hover:text-brand hover:bg-darkest grid place-items-center')
+                | Sign Up
+      
+  // Search bar section
+  section(class="relative flex justify-center items-center gap-10 flex-col top-32")
+    // Heading
+    h2(class="text-5xl text-center text-dark font-[700]") Where To?
+
+    // Search bar
+    form(action="/location", method="get", class='w-2/3 flex items-center mt-10 mx-auto rounded-lg')
+      // Search Input
+      input(type='text' name="locationName" autocomplete="off" placeholder='Places To Go, Hotels, Restaurants...' class='p-4 w-full rounded-l-full focus:outline-none placeholder:text-brand')
+
+      // Search Button
+      button(class='p-4 rounded-r-full bg-brand text-darkest hover:bg-darkest hover:text-brand transition-all')
+        | Search
+
+  //- Cards section-1
+  section#discover-section(class="flex flex-col relative mt-52")
+    //- headings
+    h1(class="mt-20 text-2xl") Year-end trips to book right now
+    h3(class="text-lg text-mid")
+      | Countdown parties, sunny beaches, and cultural getaways
+
+    //- card container
+  //- section.flex.flex-wrap.gap-8.mt-8.overflow-y-scroll.no-scrollbar.h-auto
+  //- each location, index in locations 
+  //-   const coverImage = location.coverImagePath
+  //-   //- Log the location details to the console
+  //-   script.
+  //-     console.log('Location:', #{location});
+  //-   a.card(href=`/location?locationName=${location.locationName}`, class="w-1/4 min-w-[21%] h-48 rounded-lg cursor-pointer relative"  data-index=index)
+  //-     div(class="h-full bg-cover bg-center relative" style=`background-image: url('${coverImage}')`)
+  //-       div(class="absolute inset-0 bg-black opacity-30")
+  //-       div(class="absolute inset-0 flex justify-center items-end text-light p-4")
+  //-         h2(class="text-2xl font-bold")= location.locationName
+   
+  section.flex.flex-wrap.gap-8.mt-8.overflow-y-scroll.no-scrollbar
+    each location, index in locations 
+      - const coverImage = location.coverImagePath
+      a.card(href=`/location?locationName=${location.locationName}`, class="w-1/4 min-w-[21%] h-48 rounded-lg cursor-pointer relative"  data-index=index)
+        div(class="h-full bg-cover bg-center relative" style=`background-image: url('${coverImage}')`)
+          div(class="absolute inset-0 bg-black opacity-30")
+          div(class="absolute inset-0 flex justify-center items-end text-light p-4")
+            h2(class="text-2xl font-bold")= location.locationName
+
+    //- section(class="flex flex-wrap gap-8 mt-8 overflow-y-scroll no-scrollbar")
+    //-   each location, index in locations 
+    //-     -const coverImage = location.coverImagePath
+    //-     a.card(href=`/location?locationName=${location.locationName}`, class="w-1/4 min-w-[21%] h-48 rounded-lg  cursor-pointer relative" data-index=index)
+    //-       div(class="h-full bg-cover bg-center relative" style=`background-image: url('${coverImage}')`)
+
+    //-         div(class="absolute inset-0 bg-black opacity-30")
+
+    //-         div(class="absolute inset-0 flex justify-center items-end text-light p-4")
+    //-           h2(class="text-2xl font-bold")= location.locationName
+
+  // Cards section-2
+  h1(class="mt-14 text-2xl") Top destinations for your next holiday
+  h3(class="text-lg text-mid")
+    | Here&apos;s where your fellow travellers are headed
+  section(class="flex gap-8 mt-8 overflow-y-scroll no-scrollbar")
+
+  // Cards section-3
+  section
+    h1(class="mt-20 text-2xl") Top experiences on TourAdvisor
+    h3(class="text-lg text-mid") The best tours, activities and tickets
+    div(class="flex gap-8 mt-8")
+      div(class='w-1/3')
+        img(src='/Images/home-page-cards/tokyo-tour.jpg' alt='Image Description' class="w-full h-auto rounded-lg")
+        p(class='font-[500] text-base text-dark mt-4')
+          | Tokyo 6hr-Private Tour with Government-Licensed Guide
+        span(class='font-[400] text-sm text-mid') from &#x20B9;12,031 per adult
+      div(class='w-1/3')
+        img(src='/Images/home-page-cards/phi-phi-islands.jpg' alt='Image Description' class="w-full h-auto rounded-lg")
+        p(class='font-[500] text-base text-dark mt-4')
+          | Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour
+        span(class='font-[400] text-sm text-mid') from &#x20B9;6,788 per adult
+      div(class='w-1/3')
+        img(src='/Images/home-page-cards/singapore-tour.jpg' alt='Image Description' class="w-full h-auto rounded-lg")
+        p(class='font-[500] text-base text-dark mt-4') Singapore Duck Tour
+        span(class='font-[400] text-sm text-mid') from &#x20B9;2,879 per adult
+  
+
+  // FOOTER
+  footer(class="absolute left-0 w-full bg-light p-6 mt-12 grid grid-cols-5")
+
+    // Links
+    div.col-span-1
+      h2(class="text-darkest text-lg") About TourAdvisor
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') About Us
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') Resources &amp; Policies
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') Careers
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') Trust &amp; Safety
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') Contact Us
+    div.col-span-1
+      h2(class="text-darkest text-lg") Explore
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') Write a Review
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') traveller&apos;s Choice
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') Help Centre
+      a(href='#' class='hover:text-darkest hover:underline block text-sm my-4 text-dark') Travel Articles
+
+    // Branding & privacy
+    div.col-span-3
+      h1(class='font-[800] text-2xl text-brand inline-block') TourAdvisor
+      span(class='text-[0.6rem] mx-4') &copy;2023 TourAdvisor LLC All rights reserved.
+      div(class="my-8 flex gap-5")
+        a(href='#' class="underline text-dark text-base") Terms of use
+        a(href='#' class="underline text-dark text-base") Privacy and Cookies Statement
+        a(href='#' class="underline text-dark text-base") Cookie consent
+        a(href='#' class="underline text-dark text-base") Site Map
+        a(href='#' class="underline text-dark text-base") How the site works
+
+  script.
+    const discoverSection = document.getElementById('discover-section')
+    const discoverLink = document.getElementById('discover');
+
+    discoverLink.addEventListener('click', (e) => {
+      e.preventDefault()
+      discoverSection.scrollIntoView({ behavior: 'smooth' })
+    })

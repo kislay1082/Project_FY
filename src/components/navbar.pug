@@ -1,0 +1,24 @@
+// Navogation bar
+mixin navbar(options)
+  nav#navbar(class="bg-light text-lightest p-2 sticky top-0 left-0 z-20")
+    div(class="container mx-auto flex items-center justify-between")
+      div(class="flex items-center")
+        span(class='text-2xl text-brand cursor-pointer font-[800]') TourAdvisor
+        // Search Bar
+        form(action=options.path, method="GET", class="flex items-center mx-auto rounded-lg")
+          input(type='text' placeholder='Where To?', autocomplete="off", name=options.name, class=" ml-4 px-2 py-1 w-full rounded-l-full text-mid focus:outline-none placeholder:text-mid")
+          button(type="submit", class="px-2 py-1 rounded-r-full bg-white") &#x1F50E;
+      // Navbar Links
+      div(class="space-x-4")
+        a(href='/' class='nav-link text-dark text-base rounded-lg p-2 font-[500] hover:bg-mid') Home
+        a(href='/bookings', class='nav-link text-dark text-base rounded-lg p-2 font-[500] hover:bg-mid')
+          | Bookings
+      // Conditional Rendering for Sign In/Sign Out
+      if user
+        a(href='/logout')
+          button#signInBtn(class='bg-brand text-darkest py-2 px-4 rounded-lg hover:text-brand hover:bg-darkest')
+            | Logout
+      else
+        a(href='/login')
+          button#signUpBtn(class='bg-brand text-darkest py-2 px-4 rounded-lg hover:text-brand hover:bg-darkest')
+            | Sign In

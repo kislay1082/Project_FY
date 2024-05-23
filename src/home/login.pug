@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Login Page
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css")
+  body(style='background-image: url("/Images/background.jpg"); background-size: cover;')
+    header(class="bg-gradient-to-r from-blue-900 to-black text-white text-center py-4")
+      h1(class="text-3xl font-bold") Login Page
+    main(class="max-w-md mx-auto mt-16 bg-white bg-opacity-70 p-6 rounded-lg shadow-lg ")
+      form(action="/login", method="POST")
+        div(class="mb-4")
+          label(for="email" class="block text-gray-700 text-sm font-semibold mb-2 opacity-100") Email:
+          input(type="email" id="email" name="email" required class="opacity-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline")
+        div(class="mb-4")
+          label(for="password" class="block text-gray-700 opacity-100 text-sm font-semibold mb-2") Password:
+          input(type="password" id="password" name="password" required class="shadow opacity-100 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline")
+        div(class="flex items-center justify-center")
+          button(type="submit" class="opacity-100 bg-gradient-to-r from-blue-900 to-black hover:from-black hover:to-blue-500 text-white font-bold py-2 px-5 rounded focus:outline-none focus:shadow-outline") Login
+      if message
+        div(id="alert-message" class="alert alert-danger text-center text-red-600")= message
+      div.text-center.mt-4
+        a(href="/register" class="text-black hover:underline font-semibold") Register an Account
+    footer(class="text-center text-gray-500 text-xs mt-4")
+      p
+        | © 2024 Login Page. All rights reserved.
+  script.
+    setTimeout(() => {
+      document.getElementById('alert-message').style.display = 'none';
+      }, 5000); // 5000 milliseconds = 5 seconds

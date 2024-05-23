@@ -1,0 +1,40 @@
+include ./index.pug
+
+header#header(class='ml-[15vw] p-4 flex flex-col items-center gap-6 h-[calc(100vh-6.5rem)] bg-no-repeat bg-center bg-cover' style=("background-image: url('/Images/flights-hero.jpg')"))
+    h1(class='font-[700] text-5xl text-darkest text-center mt-16')
+        | Find cheap flight & airline tickets
+    div(class='w-2/3 flex items-center my-4 mx-auto bg-white shadow-md rounded-full')
+        // Search Input
+        input(type='text' placeholder='From' class='focus:outline-none p-4 w-full rounded-l-full')
+        input(type='text' placeholder='To' class='focus:outline-none border-l border-mid p-4 w-full')
+        // Search Button
+        button(class='hover:bg-mid hover:text-darkest p-4 rounded-r-full bg-brand')
+            | 🔍
+
+section#card-container(class='ml-[15vw] bg-white p-8 gap-8')
+    h1(class="text-3xl font-semibold mb-10") Here's what we found
+    if (flights !== null)
+        each flight, index in flights
+            div#card(class="bg-lightest shadow-lg border border-light rounded-2xl p-4 w-[46%] inline-block m-4")
+                div#details(class="w-full")
+                    div(class="flex items-center gap-4 ml-6 mt-4")
+                        h1(class="text-2xl text-dark font-semibold mb-4")
+                            | #{index+1}. #{flight.name}
+                        div#ratings(class="flex gap-2 items-center mb-4")
+                            div(class="rounded-full w-4 h-4 bg-orange-500")
+                            div(class="rounded-full w-4 h-4 bg-orange-500")
+                            div(class="rounded-full w-4 h-4 bg-orange-500")
+                            div(class="rounded-full w-4 h-4 bg-orange-500")
+                            div(class="rounded-full w-4 h-4 bg-mid")
+                    div(class="flex")
+                        div(class="ml-6 mt-4")
+                            h3(class="text-xl text-dark font-semibold")= flight.bestDeal.source
+                            p(class="text-xl font-semibold text-green-400 mt-2")
+                                | #{flight.bestDeal.price} INR
+                        each otherSource in flight.otherSources
+                            div#partition(class="border border-light rounded-full h-16 mt-4 mx-6")
+                            div(class="mt-4")
+                                h5(class="text-lg text-mid")= otherSource.source
+                                p(class="text-lg text-red-400 mt-2") 
+                                    | #{otherSource.price} INR 
+                    button(class="w-[90%] bg-blue-400 ml-4 mt-8 px-4 py-2 rounded-full text-lg text-lightest hover:bg-brand") View Deal

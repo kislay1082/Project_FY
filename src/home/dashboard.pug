@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap' rel='stylesheet')
+    link(rel='stylesheet' type='text/css' href='/styles/style.css')
+    title Dashboard
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css') 
+body(style='background-image: url("/Images/greenhill.jpg"); background-size: cover; background-repeat: no-repeat; height: 100vh;')
+    // Navbar
+    nav.navbar(class='bg-[#76bd95] py-4 flex justify-between px-12')
+        a(href="/", class='text-xl text-white cursor-pointer font-bold p-2') TourAdvisor
+        a(href='/logout')
+              button(class='border border-black text-white text-sm px-4 py-2 rounded-lg hover:text-brand hover:bg-darkest grid place-items-center')
+                | Logout
+      
+    // Main content
+    div.container(class='text-center mt-6 mx-auto')
+    p(class='text-center text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 md:mb-12') Welcome to the Dashboard
+    .buttons(class='flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0 mx-auto justify-center')
+        a.btn.btn-secondary(href='/planmanually', class='text-green-500 bg-white hover:scale-105 hover:border-slate-100 text-lg sm:text-xl md:text-2xl hover:text-white hover:bg-green-500 font-bold py-3 sm:py-4 px-5 sm:px-6 rounded mb-4 sm:mb-0') Plan Manually
+        a.btn.btn-primary(href='/aitravelplanner', class='text-green-500 bg-white hover:scale-105 hover:border-slate-100 text-lg sm:text-xl md:text-2xl hover:text-white hover:bg-green-500 font-bold py-3 sm:py-4 px-5 sm:px-6 rounded') AI Travel Planner

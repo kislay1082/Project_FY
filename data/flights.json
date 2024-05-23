@@ -1,0 +1,106 @@
+{
+  "Dubai": [
+    {
+      "name": "IndiGo Flight 6E123",
+      "bestDeal": {
+        "source": "MakeMyTrip",
+        "price": 5500
+      },
+      "otherSources": [
+        {
+          "source": "Cleartrip",
+          "price": 5600
+        },
+        {
+          "source": "Yatra",
+          "price": 5700
+        }
+      ]
+    },
+    {
+      "name": "Air India Flight AI456",
+      "bestDeal": {
+        "source": "Goibibo",
+        "price": 7000
+      },
+      "otherSources": [
+        {
+          "source": "Expedia",
+          "price": 7200
+        },
+        {
+          "source": "Travelocity",
+          "price": 7100
+        }
+      ]
+    },
+    {
+      "name": "SpiceJet Flight SG789",
+      "bestDeal": {
+        "source": "Ixigo",
+        "price": 4500
+      },
+      "otherSources": [
+        {
+          "source": "Skyscanner",
+          "price": 4600
+        },
+        {
+          "source": "Kayak",
+          "price": 4700
+        }
+      ]
+    },
+    {
+      "name": "Vistara Flight UK234",
+      "bestDeal": {
+        "source": "EaseMyTrip",
+        "price": 6000
+      },
+      "otherSources": [
+        {
+          "source": "Priceline",
+          "price": 5900
+        },
+        {
+          "source": "CheapOair",
+          "price": 6100
+        }
+      ]
+    },
+    {
+      "name": "GoAir Flight G876",
+      "bestDeal": {
+        "source": "Booking.com",
+        "price": 4800
+      },
+      "otherSources": [
+        {
+          "source": "Orbitz",
+          "price": 4900
+        },
+        {
+          "source": "TripAdvisor",
+          "price": 5000
+        }
+      ]
+    },
+    {
+      "name": "AirAsia Flight AK789",
+      "bestDeal": {
+        "source": "Agoda",
+        "price": 5200
+      },
+      "otherSources": [
+        {
+          "source": "Hotels.com",
+          "price": 5300
+        },
+        {
+          "source": "Expedia",
+          "price": 5400
+        }
+      ]
+    }
+  ]
+}
